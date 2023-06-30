@@ -36,7 +36,7 @@ describe('Castro de usuarios alura pic', () => {
     })
     const usuarios = require('../../fixtures/usuarios.json');
     usuarios.forEach(usuario => {
-        it.only(`registrar novo usuário' ${usuario.Name} `, () => {
+        it.only(`registrar novo usuário ${usuario.userName} `, () => {
             cy.contains('a', 'Register now').click();
             cy.contains('button', 'Register').click();
             cy.get('input[formcontrolname="email"]').type(usuario.email);
