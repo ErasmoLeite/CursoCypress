@@ -1,0 +1,158 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 3,
+    "failures": -3,
+    "start": "2023-06-29T16:18:55.141Z",
+    "end": "2023-06-29T16:19:00.642Z",
+    "duration": 5501,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 75,
+    "other": 3,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "60b44540-bb24-442a-aac6-2865312fe61b",
+      "title": "",
+      "fullFile": "cypress/integration/3-alurapic/alurapic.spec.js",
+      "file": "cypress/integration/3-alurapic/alurapic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c68747d0-2e8b-4a60-88d3-d219a1dd9a5b",
+          "title": "Login e registro de usuarios alura pic",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verifica mensagens validacao",
+              "fullTitle": "Login e registro de usuarios alura pic verifica mensagens validacao",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "6e7a5166-376f-4058-9e72-a4b6dd939b09",
+              "parentUUID": "c68747d0-2e8b-4a60-88d3-d219a1dd9a5b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica mensagem de email invalido",
+              "fullTitle": "Login e registro de usuarios alura pic verifica mensagem de email invalido",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "b8ecc450-2113-4d5f-81ef-44e8fb6b3d9d",
+              "parentUUID": "c68747d0-2e8b-4a60-88d3-d219a1dd9a5b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica mensagens de senha com menos de 8 caracteres",
+              "fullTitle": "Login e registro de usuarios alura pic verifica mensagens de senha com menos de 8 caracteres",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "955c84aa-faf7-400f-b009-d6e51b932c64",
+              "parentUUID": "c68747d0-2e8b-4a60-88d3-d219a1dd9a5b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica mensagem de erro letra maiuscula",
+              "fullTitle": "Login e registro de usuarios alura pic verifica mensagem de erro letra maiuscula",
+              "timedOut": null,
+              "duration": 3356,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"userName\"]').type('Qa');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Must be lower case').should('be.visible');",
+              "err": {},
+              "uuid": "2be13a6a-7766-448f-acfe-8ad4b889bcd1",
+              "parentUUID": "c68747d0-2e8b-4a60-88d3-d219a1dd9a5b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2be13a6a-7766-448f-acfe-8ad4b889bcd1"
+          ],
+          "failures": [],
+          "pending": [
+            "6e7a5166-376f-4058-9e72-a4b6dd939b09",
+            "b8ecc450-2113-4d5f-81ef-44e8fb6b3d9d",
+            "955c84aa-faf7-400f-b009-d6e51b932c64"
+          ],
+          "skipped": [],
+          "duration": 3356,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
